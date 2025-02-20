@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement-section design</title>
+    <link href="certi.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <p>PORTFOLIO</p>
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Skills</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="index.html">Contact-Us</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </header>
+    <script>
+        let menuList = document.getElementById("menulist");
+        menuList.style.maxHeight = "0px";
+    
+        function toggleMenu() {
+          if (menuList.style.maxHeight === "0px") {
+            menuList.style.maxHeight = "350px";
+          } else {
+            menuList.style.maxHeight = "0px";
+          }
+        }
+    </script>
+         
+    <div class="achievement-card"><h1>Achievement</h1></div>
+    <div class="partition">
+    <div class="courses">
+        <div id="container" class="container">
+            <h3 id="findpapers" style="text-align: center;">Achievement</h3>
+            <div class="boxes">
+              <div class="box1" onclick="box(0)"><a href="#dynamicDiv">LI-Mat Soft</a></div>
+              <div class="box1" onclick="box(1)"><a href="#dynamicDiv">Be10X AI</a></div>
+              <div class="box1" onclick="box(2)"><a href="#dynamicDiv">Chatbot</a></div>
+              <div class="box1" onclick="box(3)"><a href="#dynamicDiv">SoftPro</a></div>
+              <div class="box1" onclick="box(4)"><a href="#dynamicDiv">TCS ions CarrerEdges</a></div>
+              <div class="box1" onclick="box(5)"><a href="#dynamicDiv">LinkedIn Learning Certificate</a></div>
+              <div class="box1" onclick="box(6)"><a href="#dynamicDiv">National Association of State Boards of Accountancy (NASBA)</a></div>
+              <div class="box1" onclick="box(7)"><a href="#dynamicDiv">Power BI</a></div>
+              <div class="box1" onclick="box(8)"><a href="#dynamicDiv">Saanvi Technology Solutions</a></div>
+              <div class="box1" onclick="box(9)"><a href="#dynamicDiv">Unstop Weekly Coding Challenge 5716th rank</a></div>
+            </div>
+          </div>
+    </div>
+        <div id="dynamicDiv" class="list"><ul>List
+            <li><a href="https://drive.google.com/file/d/1Kh0ZGkKL0cRlFa4vkdD05s5iE-e7_Zd6/view?usp=drive_link"><p>Li-Mat Soft</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1sTEseAxAk9u5a9XTqrP7cl-pwBAxysQz/view?usp=drive_link"><p>Be10X AI</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1sTUKnpqSgps8URr6uj2cFBOvsmQcu9Er/view?usp=drive_link"><p>Chatbot</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1GiLvwhM2m7Fg7pVUSLnv8hS9YNxSbslt/view?usp=drive_link"><p>SoftPro</p></a></li>
+            <li><a href="https://drive.google.com/file/d/186FHe7fWvAtpgIh_UuEwYXiG8ig3LJ3k/view?usp=drive_link"><p>TCS ions CarrerEdges</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1sV3ex_BK5LnWbQeniaQs7mmehjh95s9t/view?usp=drive_link"><p>LinkedIn Learning Certificate</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1sW5LwEX2Rdin2VgK3bJDPkviygi3rN7s/view?usp=drive_link"><p>National Association of State Boards of Accountancy (NASBA)</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1sWD445xm6Z9T9Hm7jalrz-D421B7hDl6/view?usp=drive_link"><p>Power BI</p></a></li>
+            <li><a href="https://drive.google.com/file/d/1Qd65ExlIfLJjoc2yveVVld82niTTWkRY/view?usp=drive_link"><p>Saanvi Technology Solutions</p></a></li>
+            <li><a href="https://drive.google.com/file/d/11_m6e5w_1ycjAmT5Emo_u8UcOEVXecil/view?usp=drive_link"><p>Unstop Weekly Coding Challenge</p></a></li>
+        </ul>
+    </div>
+    </div>
+    <script>
+        function box(index) {
+            const listItems = document.querySelectorAll(".list ul li");
+            if (listItems[index]) {
+                listItems[index].classList.add("blink-effect");
+                
+                // Remove the class after animation
+                setTimeout(() => {
+                    listItems[index].classList.remove("blink-effect");
+                }, 1000);
+            }
+        }
+    </script>
+          
+   
+</body>
+</html>

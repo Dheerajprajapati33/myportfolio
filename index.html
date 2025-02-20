@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/titleimage.png" rel="icon" />
+    <title>PORTFOLIO</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar creation -->
+     <header>
+        <div class="logo">
+          <p>PORTFOLIO</p>
+        </div>
+        <ul id="menulist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact-Us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+     </header>
+     <!-- main section -->
+
+
+      <!-- home section -->
+      <section id="home">
+        <div class="home-section">
+          <div class="home-content">
+            <h1>
+              Hello!
+              <br />
+              I am Dheeraj Prajapati.<br>
+              A Web Developer.
+
+            </h1>
+            <div>
+              <a
+                class="button"
+                href="https://www.linkedin.com/in/dheeraj-prajapati-231ab7296"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              &nbsp;&nbsp;
+              <a
+                class="button"
+                href="https://github.com/Dheerajprajapati33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+
+              <a
+                class="button"
+                href="https://leetcode.com/u/d8P6jUaX2b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              LeetCode
+              </a>
+              <a
+                class="button"
+                href="https://drive.google.com/file/d/13qAKSyI5HlH31mO6Jky8ZQZQO_NAdwpM/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              See Resume
+              </a>
+            </div>
+            <p>
+              Explore my projects, skills, and experience. I enjoy solving problems,
+              writing clean code, and building amazing things with technology.
+            </p>
+          </div>
+          
+            <img class="main-image" src="images/main.jpg" alt="Profile or Related Image" />
+           
+          
+        </div>
+      </section>
+      
+
+       <!-- about section-->
+       <section id="About" class="about-section">
+        <div class="about-image-info">
+          <!-- {/* Left-side image */} -->
+          <img src="images/about1.jpg" alt="About me" class="about-image" style="border-radius: 50%;"/>
+          
+          <!-- {/* Info beside image */} -->
+          <div class="about-info">
+            <p>I am passionate about coding, learning, and building exciting projects. As a creative thinker
+               and problem solver, I thrive on tackling challenges and developing innovative solutions.</p>            <ul class="list">
+              
+              <li><strong>Name:</strong>Dheeraj Prajapati</li>
+              <li><strong>Phone:</strong> +917007498699</li>
+              <li><strong>Location:</strong>Lucknow</li>
+              <li><strong>Email:</strong>dheeraj786124@gmail.com</li>
+              <li><strong>Education:</strong>Currently Pursuing a BTech</li>
+
+
+            </ul>
+          </div>
+        </div>
+        <!-- {/* Right-side about description */} -->
+        <div class="about-description">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate software engineer dedicated to continuous learning and growth. I thrive on solving 
+            complex problems and creating efficient solutions that enhance user experiences. My expertise spans 
+            various domains, with a strong focus on full stack development, where I specialize in building 
+            responsive and user-friendly interfaces.I am committed to delivering excellence in every project I 
+            undertake, ensuring that my work not only meets but exceeds expectations. I believe in the power of 
+            collaboration and am always eager to share knowledge and learn from others.
+          </p>
+          <p>
+            Feel free to reach out if you’d like to connect or learn more about my work!
+          </p>
+        </div>
+      </section>
+<!-- skill -->
+<section id="Skills">
+      <div class="skillback">
+        <div class="skill"><h1>Skills</h1></div>
+          <div class="side">
+            <div class="leftside"></div>
+            <div class="rightside">
+                <main class="row">
+                  <section class="col">
+                    <h3 class="title">Educational Qualifications</h3>
+                    <div class="contents">
+                      <div class="box">
+                        <h4>B.Tech</h4>
+                        <h3>2022-2026</h3>
+                        <p>I am currently pursuing my B.tech in Computer Science Engineering from 
+                          Dr. A.P.J. Abdul Kalam Techanical University, Lucknow.
+                        </p>
+                      </div>
+                      <div class="box">
+                        <h4>Intermediate Degree</h4>
+                        <h3>2021-2022</h3>
+                        <p>CENTRAL PUBLIC SCHOOL JAFFARPUR AZAMGARH UP.
+                        </p>
+                      </div>
+                      <div class="box">
+                        <h4>High School Degree</h4>
+                        <h3>Year:2019-2020</h3>
+                        <p>DON BOSCO SCHOOL MAHADOPURAM GORAKHPUR UP.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>         
+
+ <!-- projects section -->
+  <section id="projects">
+    <div class="background">
+      <div class="project-card"><h1>Projects</h1></div></div>
+      <div class="division">
+      <div class="div1"><img src="images/project1.png" class="images"><p>This project will be design using HTML,CSS,jS and use google drive also for study materials</p><button><a href="https://learnologyeducation.netlify.app">view</a></button><button><a href="https://github.com/Dheerajprajapati33/Learnology-Ecom.">source-code</a></button></div>
+      <div class="div1"><img src="images/project2.png" class="images"><p>This game show the simple tic-tac-toe using html,css,js</p><button><a href="https://dheerajprajapati33.github.io/TIC-TAC-TOE/">view</a></button><button><a href="https://github.com/Dheerajprajapati33/TIC-TAC-TOE">source-code</a></button></div>
+      <div class="div1"><img src="images/project3.png" class="images"><p>This game show the simple simon-says using html,css,js</p><button><a href="https://dheerajprajapati33.github.io/SIMON_SAYS/">view</a></button><button><a href="https://github.com/Dheerajprajapati33/SIMON_SAYS">source-code</a></button></div>
+      <div class="div1"><img src="images/project4.png" class="images"><p>This is simple todo-list design using React</p><button><a href="https://todotaskactionlist.netlify.app">view</a></button><button><a href="https://github.com/Dheerajprajapati33">source-code</a></button></div>
+      <div class="div1"><img src="images/project5.png" class="images"><p>This project show the E-commerece design on the processing...</p><button><a href="">view</a></button><button><a href="https://github.com/Dheerajprajapati33">source-code</a></button></div>
+      <div class="div1"><img src="images/project6.png" class="images"><p>This project will be design using HTML,CSS,jS for taking quiz </p><button><a href="https://dheerajprajapati33.github.io/Quizgame/">view</a></button><button><a href="https://github.com/Dheerajprajapati33/Quizgame">source-code</a></button></div>
+      <div class="div1"><img src="images/project7.png" class="images"><p>This project will be design using React,localStorage,npm,loardicons for saving data infomation</p><button><a href="https://passwordsaving.netlify.app/">view</a></button><button><a href="https://github.com/Dheerajprajapati33/passopmanager">source-code</a></button></div>    
+    </div>
+  </section>
+<!-- contact section -->
+ <footer>
+      <section id="Contact">
+        <div class="contact">
+          <div class="heading">
+            <h1>Contact</h1>
+          </div>
+          <div class="contact-icons">
+            <ul>
+              <li>
+                <a href="mailto:dheeraj786124@gmail.com" aria-label="Email">
+                  <i class="fa-solid fa-envelope" style="color: #fff"></i>
+                </a>
+              </li>
+              
+              
+              
+              <li>
+                <a href="tel:+7007498699" aria-label="Phone">
+                  <i class="fa-solid fa-mobile" style="color: #fff"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/dheerajdaksh786?igsh=eGMwNzg1Z3k0d2lr" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram" style="color: #fff"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8f1aa7e2-009e-4335-9bba-b826804084d7"> 
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Email</button>
+            <button type="button"><a href="certificate.html">Achievement</a></button>
+          </form>
+        </section>
+</footer>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+ <!-- js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+ crossorigin="anonymous"></script>
+ <script src="index.js"></script>
+</body>
+</html>
